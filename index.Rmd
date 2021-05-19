@@ -1,0 +1,87 @@
+---
+title: "CISBAR Rating Main Page"
+output:
+  html_document:
+    toc: true
+    toc_float: true 
+    theme: spacelab
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+```
+
+```{r, include=FALSE}
+library(here)
+here("CISBSAR Study", "Conversation Scoring Training.pptx")
+here("CISBAR Study", "Behavior Rating Sheet 5-18.docx")
+here ("CISBAR Study", "Template for calculating speaking duration.xlsx")
+here("CISBAR Study", "Template for calculating speaking duration EXAMPLE.xlsx")
+here("CISBAR Study", "Practice A1.mp4")
+here("CISBAR Study", "Practice A2.mp4")
+here("CISBAR Study", "Practice D3.mp4")
+here("CISBAR Study", "Practice V2.mp4", "Practice Video A1 Transcript.pdf", "Practice Video D1 Transcript.pdf", "V1 Practice.mp4", "Practice Video V2 Transcript")
+```
+
+## Training Slides
+[Download 5-17-21 Training slides](Conversation Scoring Training.pptx)
+
+## Data Collection Sheets    
+Updates and Changes: Any updated version will always appear here with the date and a brief description of changes.    
+
+    5/17/2021 - Let's discuss if any changes to this would be useful.
+    5/18/2021 - Per our meeting, here is the updated Behavior Rating Sheet, which more closely matches the updated Qualtrics.
+[Download current Behavior Rating Sheet](Behavior Rating Sheet 5-18.docx)
+
+
+## Tools for Calculating Average Speaking Turn Duration
+
+Currently there are two ways to calculate average speaking turn duration:    
+
+   1. Using the stopwatch function on your phone or other device, start the stopwatch each time the primary participant (person with ABI) begins a speaking turn, and stop it when they finish talking. Write down the number of seconds, keep a list, and at the end of the conversation, total the number of seconds and divide it by the speaking turns to obtain the average speaking turn duration for that conversation.
+
+2. [Download the Excel Template for Calculating Speaking Duration](Template for calculating speaking duration .xlsx) [Example entry here](Template for calculating speaking duration EXAMPLE.xlsx) 
+    Open up the first Excel file and the transcript of the conversation you are scoring. Before working on it, it would be a good idea to "save as" this Excel file with a new name with the code of the sample you are working on, and keep it saved on your computer if needed until the study is done, so we can reference back to it if there are any discrepancies in the data. 
+
+      In Column B, "Minutes in Timestamp", type the number before the ":" indicating minutes in each listed timestamp; for example, for timestamp "00:03", it would just be "0". In Column C, "Seconds in Timestamp", type the number after the ":" in the timestamp, e.g. for "00:03" it would be "3".
+    Make sure that the speaker roles align--start the first ABI speaking turn where the cell in the first column says "ABI".  Adjust as needed so that the number of seconds for the first speaking turn of the primary participant is accurate.
+    From there, the functions I created in this Excel file should automatically calculate the total number of seconds in each turn, and from there the average speaking duration of each speaking turn for the person with ABI (highlighted cell at the bottom). Note that I accounted for the fact that one of the values will be negative by using the function "AVERAGEIF" so that it will only average the values that are entered and are above 0.9, excluding negative numbers and zeroes from the calculation of average. However, there is always the possibility of error, so please keep any Excel files you use for scoring so that you can email them to me to double check if there are any problems. 
+
+At present, we will trial both methods and compare the accuracy of both. Please indicate which method you are using so that I can compare both of them and see which is most accurate and efficient to use for the real samples. 
+
+## Qualtrics     
+Updates and Changes:  Any updated version will always appear here with the date and a brief description of changes.  
+    
+    5/17/2021 -  Changes have been made for ease of scoring using the new Otter transcripts which allow us to easily see how many times the partner completed a thought. I also added notes to explain how to score each item, added a progress bar at the top, and changed it to display only one question per page. After the meeting, per team feedback, I changed it back to display all items on same page.
+ 
+ [Use this link to the current Qualtrics to score all practice and real videos](https://oregon.qualtrics.com/jfe/form/SV_bmBmcDQpKoSBJcO)
+
+## Training Practice Videos and Transcripts
+[Practice Video V1]("V1 Practice.mp4")
+[Transcript V1]("Practice Video V1 Transcript.pdf")
+
+[Practice Video A1]("Practice A1.mp4")
+[Transcript A1]("Practice Video A1 Transcript.pdf")
+
+[Practice Video D1]("Practice Video D1.mp4")
+[Transcript D1]("Practice Video D1 Transcript.pdf")
+
+[Practice Video V2]("Practice V2.mp4")
+[Transcript V2]("Practice Video V2 Transcript.pdf)
+
+[Practice Video A2]#("Practice A2.mp4")
+[Transcript A2]
+
+[Practice Video D2]
+[Transcript D2]
+
+[Practice Video V3]
+[Transcript V3]
+
+[Practice Video A3]
+[Transcript A3]
+
+[Practice Video D3]
+[Transcript D3]
